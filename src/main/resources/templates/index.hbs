@@ -1,0 +1,14 @@
+{{#partial "content"}}
+
+    <h1>Book list!</h1>
+
+    {{#if books}}
+        {{#each books }}
+            <p>{{ title }} <a href="/books/{{id}}">read more...</a></p>
+        {{/each}}
+    {{else}}
+        <p>No books!</p>
+    {{/if}}
+{{/partial}}
+
+{{> layout.hbs}}
